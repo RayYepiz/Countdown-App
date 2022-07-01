@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary:;
+    --ff-secondary:;
+
+    --fs-h1:;
+    --fs-h2:;
+    --fs-h3:;
+
+    --fw-bold:;
+    --fw-regular:;
+
+    --clr-light:;
+    --clr-dark:;
+    --clr-accent:;
+
+
+}
+
+/* general styles */
+
+body {
+    background-image:url('./images/brett-jordan-U2q73PfHFpM-unsplash.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+
+}
