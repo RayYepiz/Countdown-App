@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary:'Libre Baskerville', serif;
+
+    --fs-h1:2.5rem;
+    --fs-h2:1.75rem;
+    --fs-h3:1.15rem;
+
+    --fw-bold:450;
+    --fw-regular:400;
+
+    --clr-light:#ced4da;
+    --clr-dark:#212529;
+    --clr-accent1:#56cfe1;
+    --clr-accent2:#80ffdb;
+
+
+}
+
+/* general styles */
+
+body {
+    background-image:url('./images/brett-jordan-U2q73PfHFpM-unsplash.jpg');
+    background-size: cover;
+    color: var(--clr-light);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-primary)
+}
