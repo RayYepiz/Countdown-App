@@ -5,16 +5,16 @@
 :root{
     --ff-primary:'Libre Baskerville', serif;
 
-    --fs-h1:2.5rem;
-    --fs-h2:1.75rem;
-    --fs-h3:1.15rem;
+    --fs-large:3.3rem;
+    --fs-medium:2.4rem;
+    --fs-small:1.6rem;
 
     --fw-bold:450;
     --fw-regular:400;
 
     --clr-light:#ced4da;
     --clr-dark:#212529;
-    --clr-accent1:#56cfe1;
+    --clr-accent1:#00d4ff;
     --clr-accent2:#80ffdb;
 
 
@@ -27,6 +27,7 @@ body {
     background-size: cover;
     color: var(--clr-light);
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -35,4 +36,105 @@ h1,
 h2,
 h3 {
     font-family: var(--ff-primary)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* title styles */
+
+.title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:3rem;
+    margin:0 auto 2rem;
+    padding:0 auto;
+}
+
+.title::after{
+    content: "";
+    margin: 0 auto 1rem;
+    padding: 0 auto;
+    width: 80%;
+    height: .5vh;
+    background: rgb(2, 0, 36);
+    background:linear-gradient(90deg,rgba(2,0,36,1),rgba(9,9,121,1)35%,rgba(0,212,255,1)100%);
+}
+
+.title strong{
+    font-size: var(--fs-medium);
+}
+
+@media (min-width:600px) {
+    .title strong{
+        font-size: var(--fs-large);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* countdown styles */
+
+
+
+
+.countdown{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    gap: 1.5em;
+    background:rgba(0, 0, 0, 0.65);
+    width:calc(100% - 1.5rem);
+    max-width: 900px;
+}
+
+.countdown__items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: var(--clr-accent1);
+}
+
+.countdown__item{
+    font-size: var(--fs-small);
+}
+
+h3{
+    font-size:var(--fs-small)
+}
+
+@media (min-width:600px){
+    
+    .countdown__item {
+        font-size: var(--fs-medium)
+    }
+    h3{font-size:var(--fs-medium)}
+
 }
