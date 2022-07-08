@@ -25,11 +25,13 @@
 body {
     background-image:url('./images/brett-jordan-U2q73PfHFpM-unsplash.jpg');
     background-size: cover;
+    background-position: center center;
     color: var(--clr-light);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 h1,
